@@ -45,11 +45,5 @@ app.post("/db/react",function(req,res){
           });
     })
 
-    module.exports = (req, res) => {
-        res.status(200).json({ message: "Hello from Node.js on Vercel!" });
-      };
+    export default (req, res) => app(req, res);
 
-
-app.listen(process.env.SERVER_PORT,function(){
-    console.log("connection succesful");
-})
